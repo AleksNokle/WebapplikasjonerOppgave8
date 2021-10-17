@@ -1,0 +1,92 @@
+{
+    "questions": [
+        {
+            "title": "Hvilken av disse er en ekte form for testing?",
+            "answers": [
+            {
+                "answer1": "Enhetstester"
+            },
+            {
+                "answer2": "Integrasjonstester"
+            },
+            {
+                "answer3": "End-to-end-tester"
+            },
+            {
+                "answer4": "Alle de nevnte ovenfor",
+                "correct": true
+            }
+            ],
+            "helper": { 
+                "text": "En enhetstest er som regel en mindre test der funksjoner eller metoder testes hver for seg. Integrasjonstester sjekker hvordan enkelte moduler av systemet fungerer sammen. End to end testing går ut på hvordan systemet fungerer i sin helhet, med alle deler, tjenester, servere osv involvert. Som regel vil man vite hvordan en vanlig bruker opplever systemet."
+            }
+        },
+        
+        {
+            "title": "Hva er hensikten med testing?",
+            "answers": [
+                {
+                    "answer1": "Testing gir ikke noe nytteverdi tilbake og er ofte bortkastet tid."
+                },
+                {
+                    "answer2": "Testing lar oss validere at deler i systemet fungerer slik som vi forventer.",
+                    "correct": true
+                },
+                {
+                    "answer3": "Testing er for å sjekke at programmet vårt kompilerer."
+                },
+                {
+                    "answer4": "Testing er feller vi kan legge i koden som skal teste at utvikleren følger med."
+                }
+                ],
+                "helper": { 
+                    "text": "Testing er ikke alltid strengt tatt nødvendig, men kan ofte være nyttig i større prosjekter. Det gjør det også lettere å oppdage feil hvis man jobber flere sammen på ett prosjekt."
+                }
+        },
+        
+        {
+            "title": "Hvor mange tester lønner det seg å ha dersom man først skal implementere det?",
+            "answers": [
+                {
+                    "answer1": "1 test per funksjon holder."
+                },
+                {
+                    "answer2": "Minst 3 tester per funksjon er ypperlig."
+                },
+                {
+                    "answer3": "Nok tester til at vi dekker et viss antall kode.",
+                    "correct": true
+                },
+                {
+                    "answer4": "Rundt 20 tester per prosjekt er passe."
+                }
+                ],
+                "helper": { 
+                    "text": "Som regel er man ute etter å oppnå en viss dekningsgrad i koden med testene. Når alle testene kjøres bør de gå gjennom en passende mengde med linjer av kode, f.eks 70%. Det er også viktig med jevn fordeling av testing over hele koden, og ikke bare enkelte deler som testes grunndig."
+                }
+        },
+        
+        {
+            "title": "Hva menes med mocking?",
+            "answers": [
+                {
+                    "answer1": "Vi lager en etterligning eller simulerer oppførselen til en tjeneste når vi tester.",
+                    "correct": true
+                },
+                {
+                    "answer2": "Vi lager en test som vi forventer at skal feile."
+                },
+                {
+                    "answer3": "Vi later som at vi har en test som fungerer for å spare tid."
+                },
+                {
+                    "answer4": "Vi gjør narr av utvikleren hvis testen feiler"
+                }
+                ],
+                "helper": { 
+                    "text": "Ofte i større applikasjoner er man avhengig av andre tjenester som håndterer enkelte deler av programmet, f.eks en database for brukere. Istedenfor å sette opp eller ta i bruk disse tjenestene hver gang vi tester, som kan være en del jobb noen ganger, kan vi heller lage en enkel etterligning. For testing av brukerdata f.eks kan du bruke en enkel array eller en JSON-fil, så du slipper å hente data fra databasen."
+                }
+        }
+
+    ]
+}
